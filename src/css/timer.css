@@ -12,6 +12,7 @@ body {
     width: 272px;
     height: 40px;
     padding-left: 16px;
+    margin-right: 8px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
@@ -19,15 +20,21 @@ body {
     letter-spacing: 0.04em;
     color: #2e2f42;
     background: #fff;
+    outline: none !important;
 }
 
-input:hover {
+#datetime-picker:hover {
     border: 1px solid #000;
 }
 
-input:active {
+#datetime-picker:focus {
     border: 1px solid #4e75ff;
     color: #000;
+}
+
+#datetime-picker:disabled {
+    border: 1px solid #808080;
+    color: #808080;
 }
 
 button {
@@ -36,12 +43,22 @@ button {
     width: 75px;
     height: 40px;
     border: none;
-    background: #cfcfcf;
+    background: #4e75ff;;
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.04em;
+    color: #fff;;
+}
+
+button:disabled {
+    background: #cfcfcf;
     color: #989898;
+}
+
+button:hover {
+    background: #6c8cff;
+    color: #fff;
 }
 
 .timer {
